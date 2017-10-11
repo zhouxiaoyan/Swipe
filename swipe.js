@@ -101,7 +101,7 @@ function Swipe(container, options) {
   }
 
   function circle(index) {
-
+//处理循环时的好方法。既考虑了负值又考虑了他们的循环问题
     // a simple positive modulo using slides.length
     return (slides.length + (index % slides.length)) % slides.length;
 
